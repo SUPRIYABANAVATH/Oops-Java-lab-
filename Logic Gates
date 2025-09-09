@@ -1,0 +1,35 @@
+public class LogicGates {
+    public static void main(String[] args) {
+        boolean A = true;
+        boolean B = false;
+
+        // AND Gate
+   System.out.println("A AND B = " + (A && B));
+
+        // OR Gate
+   System.out.println("A OR B = " + (A || B));
+
+        // NOT Gate
+   System.out.println("NOT A = " + (!A));
+        System.out.println("NOT B = " + (!B));
+
+        // XOR Gate
+   System.out.println("A XOR B = " + (A ^ B));
+
+        // NAND Gate
+   System.out.println("A NAND B = " + !(A && B));
+
+        // NOR Gate
+  System.out.println("A NOR B = " + !(A || B));
+    }
+}
+
+
+OUTPUT:
+A AND B = false
+A OR B = true
+NOT A = false
+NOT B = true
+A XOR B = true
+A NAND B = true
+A NOR B = false
