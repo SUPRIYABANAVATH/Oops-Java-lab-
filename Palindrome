@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+   System.out.print("Enter a word: ");
+        String str = sc.nextLine();
+        String rev = "";
+
+  for (int i = str.length() - 1; i >= 0; i--) {
+            rev = rev + str.charAt(i);
+        }
+
+   if (str.equalsIgnoreCase(rev)) 
+        {
+            System.out.println(str + " is a Palindrome.");
+        }
+        else
+        {
+            System.out.println(str + " is NOT a Palindrome.");
+        }
+        System.out.print("\nEnter a number: ");
+        int num = sc.nextInt();
+        int original = num, reversed = 0;
+
+  while (num != 0)
+  {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+
+  if (original == reversed) 
+  {
+            System.out.println(original + " is a Palindrome.");
+        }
+        else 
+        {
+            System.out.println(original + " is NOT a Palindrome.");
+        }
+
+   sc.close();
+    }
+}
+
+
+OUTPUT:
+Enter a word: supriya
+supriya is NOT a Palindrome.
+
+Enter a number: 5
+5 is a Palindrome.
